@@ -142,3 +142,10 @@ Mejoras implementadas:
 - Los enlaces a otras páginas tienen efectos de mayor visibilidad al pasar el ratón.
 - Las imágenes tienen textos descriptivos para mostrar en caso de problemas de carga o incompatibilidad con el navegador.
 - Accesibilidad añadida.
+
+## Fase 6 - Verificación mediante tests externos
+
+He realizado distintas pruebas y para ello he utilizado distintas herramientas.
+
+#### Primera prueba, accesibilidad en TAW
+Para verificar el cumplimiento del nivel AA:
