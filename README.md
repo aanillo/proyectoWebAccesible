@@ -130,3 +130,15 @@ Página HOME nueva para la cantina:
 
 <img src="taw/index1.jpg" alt="index 1">
 <img src="taw/index2.jpg" alt="index 2">
+
+
+Mejoras implementadas:
+- He utilizado un contraste de colores que pasa todos los filtros de las webs encargadas de analizar los contrastes.
+- He dotado de mejor visibilidad a elementos como los tamaños de los textos.
+- He organizado el contenido, empleando las etiquetas header, main (con section y article) y footer.
+- He aplicado sombras en los fondos.
+- He ordenado mejor los elementos.
+- Garantizo la navegación mediante teclado.
+- Los enlaces a otras páginas tienen efectos de mayor visibilidad al pasar el ratón.
+- Las imágenes tienen textos descriptivos para mostrar en caso de problemas de carga o incompatibilidad con el navegador.
+- Accesibilidad añadida.
