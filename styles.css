@@ -1,0 +1,208 @@
+* {
+    box-sizing: border-box; 
+}
+
+
+header {
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: flex-start; 
+    background-color: rgb(151, 17, 48);
+    gap: 280px;
+    width: 100%;
+    height: 90px;
+    padding-top: 5px; 
+}
+
+.titulo {
+    font-family: 'Italianno';
+    color: white;
+    font-size: xx-large;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-left: 130px;
+    margin-bottom: 40px;
+    margin-top: 5px;
+}
+
+.busqueda-perfil {
+    display: flex;
+    align-items: center; 
+    gap: 40px; 
+}
+
+#cuadro {
+    width: 200px;
+    height: 30px;
+    border: solid 1px black;
+}
+
+
+#lupa {
+    background-color: white;
+    border: solid 1px black;
+    height: 32px;
+    align-self: flex-start; 
+    margin-top: 0; 
+    margin-right: -40px;
+}
+
+#perfil {
+    border: solid 1px black;
+}
+
+#perfil:hover {
+    transform: scale(1.5);
+}
+
+#bandera {
+    margin-top: 20px;
+}
+
+
+/*
+Nav
+*/
+
+header nav {
+    display: flex;
+    gap: 15px;
+    position: absolute; 
+    width: 50%; 
+    background-color: rgb(151, 17, 48);
+    justify-content: center; 
+    margin-top: 50px;
+    margin-left: 320px;
+}
+
+header nav ul {
+    display: flex; 
+    gap: 180px; 
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+}
+
+header nav ul li a {
+    display: inline-block; 
+    color: white;
+    font-size: large;
+    text-decoration: none;
+    transition: all 1s ease;
+    font-size: x-large;
+}
+
+header nav ul li a:hover {
+    transform: scale(1.8);
+}
+
+header nav ul li a:active {
+    color: rgb(137, 39, 6);
+}
+
+
+main {
+    margin-top: 120px;
+    text-align: center;
+    padding: 20px;
+}
+
+h1{
+    color: rgb(33, 74, 28);
+    font-size: 3em;
+}
+
+.infoSection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(to bottom, #fafaee, #e7e7de);
+    padding: 40px 0;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#texto {
+    width: 40%;
+    font-size: 1.2em;
+}
+
+#fotos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+#fotos img {
+    border-radius: 10px;
+}
+
+
+/* Services Section */
+.servSection {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px 0;
+    background: linear-gradient(to bottom, #fafaee, #e7e7de);
+}
+
+.servicio {
+    display: flex;
+    background: white;
+    padding: 20px;
+    width: 280px;
+    height: 400px;
+    gap: 20px;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.servicio h3 {
+    background-color: rgb(33, 74, 28);
+    color: white;
+    width: 100%;
+    height: 40px;
+    font-size: x-large;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 10px 10px 0 0;
+}
+
+.btnServicio {
+    background-color: rgb(33, 74, 28);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.btnServicio:hover {
+    transform: scale(1.1);
+}
+
+#titulo2 {
+    margin-top: 40px;
+}
+
+footer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: rgb(151, 17, 48);
+    gap: 100px;
+    width: 100%;
+    color: white;
+}
+
+.footerTitle {
+    color: white;
+}
