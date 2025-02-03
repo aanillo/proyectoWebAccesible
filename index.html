@@ -5,88 +5,96 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/x-icon" href="img/italia.jpg">
-    <title>CANTINA</title>
+    <title>HOME</title>
 </head>
 <body>
     <header>
-        <p class="titulo" aria-label="Nombre del restaurante">
-            <i>CANTINA<br>CHICHILO</i>
-        </p>
+        <h1 class="titulo" aria-label="Nombre del restaurante">CANTINA <br>CHICHILO</h1>
         <div class="busqueda-perfil" aria-label="Barra de búsqueda y perfil">
             <img id="lupa" src="img/lupa.png" alt="Lupa de búsqueda" width="40" height="40">
             <input id="cuadro" type="text" placeholder="Escriba aquí" aria-label="Campo de búsqueda">
-            <img id="perfil" src="img/perfil.png" alt="Ícono de perfil" width="30" height="30" role="button" tabindex="0">
+            <img id="perfil" src="img/perfil.png" alt="Ícono de perfil de usuario" width="30" height="30" role="button" tabindex="0" aria-label="Ir al perfil">
         </div>
         <nav aria-label="Menú principal de navegación">
             <ul>
-                <li><a href="#" aria-label="Conoce la historia de nuestra cantina en la sección Nosotros">Nosotros</a></li>
-                <li><a href="#" aria-label="Explora nuestro menú en la sección Carta">Carta</a></li>
-                <li><a href="#" aria-label="Haz una reservación en la sección Reserva">Reserva</a></li>
+                <li><a href="#nosotros" aria-label="Conoce la historia de nuestra cantina">Nosotros</a></li>
+                <li><a href="#carta" aria-label="Explora nuestro menú">Carta</a></li>
+                <li><a href="#reserva" aria-label="Haz una reservación en nuestra cantina">Reserva</a></li>
             </ul>
         </nav>
         <img class="bandera" src="img/italia.jpg" alt="Bandera de Italia" width="140" height="80" role="img" aria-label="Bandera de Italia">
     </header>
     <main>
-        <h1 aria-label="Título principal">CANTINA CHICHILO</h1>
-        <h2 aria-label="Subtítulo">Cocina tradicional italiana</h2>
-        <section class="infoSection" aria-labelledby="tituloInformacion">
-            <article id="texto" aria-label="Descripción del restaurante">
+        <section id="bienvenida" aria-labelledby="tituloBienvenida">
+            <h2 id="tituloBienvenida" aria-label="Bienvenida al restaurante">CANTINA CHICHILO</h2>
+            <p aria-label="Descripción breve de la cantina">Cocina tradicional italiana</p>
+        </section>
+        
+        <section id="informacion" class="infoSection" aria-labelledby="tituloInformacion">
+            <article id="texto" aria-label="Descripción sobre el restaurante">
                 <p>Desde 1956 elaborando la mejor comida italiana.</p>
                 <p>Abrimos de martes a sábado de 20:00 a 23:30 y domingos de 12:30 a 14:30.</p>
                 <p>Buenos Aires - Argentina</p>
                 <p>Nos encontrarás en calle Camarones, número 1901.</p>
             </article>
             <article id="fotos" aria-label="Galería de platos italianos">
-                <img src="img/plato1.jpeg" alt="Plato de pasta" width="220" height="150">
-                <img src="img/plato2.jpeg" alt="Plato de pizza" width="220" height="150">
-                <img src="img/plato3.jpeg" alt="Plato de risotto" width="220" height="150">
-                <img src="img/plato4.jpg" alt="Plato de lasaña" width="220" height="150">
-                <img src="img/plato5.jpeg" alt="Plato de carpaccio" width="220" height="150">
-                <img src="img/plato6.jpeg" alt="Plato de tiramisú" width="220" height="150">
+                <img src="img/plato1.jpeg" alt="Pasta italiana con salsa" width="220" height="150">
+                <img src="img/plato2.jpeg" alt="Pizza italiana tradicional" width="220" height="150">
+                <img src="img/plato3.jpeg" alt="Risotto italiano servido" width="220" height="150">
+                <img src="img/plato4.jpg" alt="Lasaña de carne tradicional" width="220" height="150">
+                <img src="img/plato5.jpeg" alt="Carpaccio de carne con aderezo" width="220" height="150">
+                <img src="img/plato6.jpeg" alt="Tiramisú casero de postre" width="220" height="150">
             </article>
         </section>
-        <h2 id="titulo2" aria-label="Servicios del restaurante">Nuestros servicios</h2>
-        <section class="servSection" aria-label="Sección de servicios">
-            <article class="servicio" aria-labelledby="servicioNosotros">
-                <h3 id="servicioNosotros">Nosotros</h3>
-                <img src="img/nosotros.png" alt="Ícono sobre nosotros" width="120" height="70">
-                <p class="textoArticle">Conoce nuestra historia e idiosincrasia</p>
-                <button class="btnServicio" aria-label="Entrar a la sección Nosotros">Entrar</button>
-            </article>
-            <article class="servicio" aria-labelledby="servicioCarta">
-                <h3 id="servicioCarta">Carta</h3>
-                <img src="img/carta.jpg" alt="Ícono de carta del menú" width="150" height="70">
-                <p class="textoArticle">Consulta la cocina tradicional que ofrecemos</p>
-                <button class="btnServicio" aria-label="Entrar a la sección Carta">Entrar</button>
-            </article>
-            <article class="servicio" aria-labelledby="servicioReserva">
-                <h3 id="servicioReserva">Reserva</h3>
-                <img src="img/reserva.jpg" alt="Ícono de reserva" width="150" height="70">
-                <p class="textoArticle">Disfruta de una gran experiencia en nuestra cantina</p>
-                <button class="btnServicio" aria-label="Entrar a la sección Reserva">Entrar</button>
-            </article>
+
+        <section id="servicios" aria-labelledby="tituloServicios">
+            <h2 id="tituloServicios">Nuestros servicios</h2>
+            <div class="servSection" aria-label="Sección de servicios">
+                <article class="servicio" aria-labelledby="servicioNosotros">
+                    <h3 id="servicioNosotros">Nosotros</h3>
+                    <img src="img/nosotros.png" alt="Logo representativo de la historia de la cantina" width="120" height="70">
+                    <p class="textoArticle">Conoce nuestra historia e idiosincrasia</p>
+                    <button class="btnServicio" aria-label="Entrar a la sección Nosotros">Más información</button>
+                </article>
+                <article class="servicio" aria-labelledby="servicioCarta">
+                    <h3 id="servicioCarta">Carta</h3>
+                    <img src="img/carta.jpg" alt="Ícono representativo de nuestro menú" width="150" height="70">
+                    <p class="textoArticle">Consulta la cocina tradicional que ofrecemos</p>
+                    <button class="btnServicio" aria-label="Entrar a la sección Carta">Ver menú</button>
+                </article>
+                <article class="servicio" aria-labelledby="servicioReserva">
+                    <h3 id="servicioReserva">Reserva</h3>
+                    <img src="img/reserva.jpg" alt="Ícono de reserva para nuestra cantina" width="150" height="70">
+                    <p class="textoArticle">Disfruta de una gran experiencia en nuestra cantina</p>
+                    <button class="btnServicio" aria-label="Entrar a la sección Reserva">Reservar ahora</button>
+                </article>
+            </div>
         </section>
     </main>
+
     <footer>
         <p class="titulo" aria-label="Nombre del restaurante en el pie de página">
-            <i>CANTINA<br>CHICHILO</i>
+            <i>CANTINA CHICHILO</i>
         </p>
         <div class="info" aria-labelledby="contactoFooter">
             <h3 id="contactoFooter" class="footerTitle">Información y contacto:</h3>
             <p><strong>Dirección: </strong>Camarones, número 1901 - Buenos Aires - Argentina</p>
             <p><strong>Teléfono: </strong>545012333</p>
-            <p><strong>Correo: </strong>cantinachichilo@gmail.com</p>
+            <p><strong>Correo: </strong><a href="mailto:cantinachichilo@gmail.com" aria-label="Enviar correo a cantinachichilo@gmail.com">cantinachichilo@gmail.com</a></p>
         </div>
         <div class="rs" aria-labelledby="redesFooter">
             <h3 id="redesFooter" class="footerTitle">Redes sociales:</h3>
-            <div>
-                <img src="img/ig.png" alt="Ícono de Instagram" width="40" height="25"> Instagram<br>
-                <img src="img/twx.png" alt="Ícono de X" width="40" height="25"> X<br>
-                <img src="img/fb.png" alt="Ícono de Facebook" width="40" height="25"> Facebook<br>
-            </div>
+            <a href="https://www.instagram.com" aria-label="Ir a la página de Instagram de la cantina">
+                <img src="img/ig.png" alt="Ícono de Instagram" width="40" height="25"> Instagram
+            </a><br>
+            <a href="https://www.x.com" aria-label="Ir a la página de X de la cantina">
+                <img src="img/twx.png" alt="Ícono de X" width="40" height="25"> X
+            </a><br>
+            <a href="https://www.facebook.com" aria-label="Ir a la página de Facebook de la cantina">
+                <img src="img/fb.png" alt="Ícono de Facebook" width="40" height="25"> Facebook
+            </a><br>
         </div>
         <img class="bandera" src="img/italia.jpg" alt="Bandera de Italia en el pie de página" width="140" height="80">
     </footer>
 </body>
 </html>
- 
