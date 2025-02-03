@@ -14,7 +14,7 @@ header {
     top: 0;
     display: flex;
     align-items: flex-start;
-    background-color: rgb(151, 17, 48);
+    background-color: #540303;
     gap: 280px;
     width: 100%;
     height: 90px;
@@ -36,33 +36,42 @@ header {
 /* Mejora la visibilidad del formulario de búsqueda */
 .busqueda-perfil {
     display: flex;
-    align-items: center;
-    gap: 40px;
-}
-
-#cuadro {
-    width: 200px;
-    height: 30px;
-    border: solid 1px black;
-    padding: 8px; /* Mejora la usabilidad */
-    background-color: #fff;
-    color: #000;
+    align-items: center; /* Asegura que los elementos estén centrados verticalmente */
+    gap: 10px; /* Reduce el espacio entre la lupa y la barra de búsqueda */
 }
 
 #lupa {
     background-color: white;
     border: solid 1px black;
     height: 32px;
-    align-self: flex-start;
-    margin-top: 0;
-    margin-right: -40px;
     padding: 5px;
-    cursor: pointer; /* Se indica que es interactivo */
+    margin-right: -10px;
+    cursor: pointer; /* Indica que es interactivo */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#cuadro {
+    width: 200px;
+    height: 30px;
+    border: solid 1px black;
+    padding: 8px;
+    background-color: #fff;
+    color: #000;
+    line-height: 1.5; /* Ajusta la altura para mejorar la alineación */
 }
 
 #perfil {
     border: solid 1px black;
+    height: 32px; /* Ajusta la altura del icono de perfil */
 }
+
+.txtPerfil {
+    color: white;
+}
+
+
 
 #perfil:hover {
     transform: scale(1.1);
@@ -83,7 +92,7 @@ header nav {
     gap: 15px;
     position: absolute;
     width: 50%;
-    background-color: rgb(151, 17, 48);
+    background-color: #540303;
     justify-content: center;
     margin-top: 50px;
     margin-left: 320px;
@@ -181,7 +190,7 @@ h1 {
 }
 
 .servicio h3 {
-    background-color: rgb(33, 74, 28);
+    background-color: #0C180C;
     color: white;
     width: 100%;
     height: 40px;
@@ -196,7 +205,7 @@ h1 {
 }
 
 .btnServicio {
-    background-color: rgb(33, 74, 28);
+    background-color: #0C180C;
     color: white;
     padding: 10px 20px;
     border-radius: 20px;
@@ -208,7 +217,7 @@ h1 {
 .btnServicio:hover,
 .btnServicio:focus {
     transform: scale(1.1);
-    background-color: #ffbf47; /* Cambio de color para feedback */
+    background-color: #ffbf47; 
 }
 
 #titulo2 {
@@ -219,13 +228,18 @@ footer {
     position: relative;
     display: flex;
     align-items: center;
-    background-color: rgb(151, 17, 48);
+    background-color: #540303;
     gap: 100px;
     width: 100%;
     color: white;
 }
 
 .footerTitle {
+    color: white;
+}
+
+.btnRRSS {
+    text-decoration: none;
     color: white;
 }
 
