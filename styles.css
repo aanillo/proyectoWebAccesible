@@ -37,7 +37,7 @@ header {
 .busqueda-perfil {
     display: flex;
     align-items: center; /* Asegura que los elementos estén centrados verticalmente */
-    gap: 10px; /* Reduce el espacio entre la lupa y la barra de búsqueda */
+    gap: 40px; /* Reduce el espacio entre la lupa y la barra de búsqueda */
 }
 
 #lupa {
