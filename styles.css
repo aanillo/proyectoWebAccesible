@@ -23,7 +23,7 @@ header {
 }
 
 .titulo {
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif cursive; /* Añadimos una fuente más legible */
+    font-family: 'Algerian', cursive; /* Añadimos una fuente más legible */
     color: white;
     font-size: 1.5em;
     font-weight: bold;
@@ -37,7 +37,8 @@ header {
 .busqueda-perfil {
     display: flex;
     align-items: center; /* Asegura que los elementos estén centrados verticalmente */
-    gap: 10px; /* Reduce el espacio entre la lupa y la barra de búsqueda */
+    gap: 50px;
+    flex-wrap: nowrap; /* Reduce el espacio entre la lupa y la barra de búsqueda */
 }
 
 #lupa {
@@ -45,7 +46,6 @@ header {
     border: solid 1px black;
     height: 32px;
     padding: 5px;
-    margin-right: -10px;
     cursor: pointer; /* Indica que es interactivo */
     display: flex;
     align-items: center;
@@ -71,11 +71,13 @@ header {
     color: white;
 }
 
-
+#lupa:hover {
+    transform: scale(1.1);
+}
 
 #perfil:hover {
     transform: scale(1.1);
-    background-color: rgba(255, 255, 255, 0.2); /* Agrega un cambio de color para mejor interacción */
+    /* Agrega un cambio de color para mejor interacción */
 }
 
 #perfil:focus {
