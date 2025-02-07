@@ -11,10 +11,9 @@
     <header>
         <h1 class="titulo" aria-label="Nombre del restaurante">CANTINA <br>CHICHILO</h1>
         <div class="busqueda-perfil" aria-label="Barra de búsqueda y perfil">
-            <p class="txtPerfil">Búsqueda:</p>
-            <img id="lupa" src="img/lupa.png" alt="Lupa de búsqueda" width="40" height="40">
-            <!-- <input id="cuadro" type="text" placeholder="Escriba aquí" aria-label="Campo de búsqueda"> -->
-            <p class="txtPerfil">Perfil:</p>
+            <label for="cuadro" id="label">Búsqueda: </label>
+            <img id="lupa" src="img/lupa.png" alt="Lupa de búsqueda" width="32" height="32">
+            <input id="cuadro" type="text" placeholder="Escriba aquí" aria-label="Campo de búsqueda">
             <img id="perfil" src="img/perfil.png" alt="Ícono de perfil de usuario" width="30" height="30" role="button" tabindex="0" aria-label="Ir al perfil">
         </div>
         <nav aria-label="Menú principal de navegación">
@@ -24,7 +23,7 @@
                 <li><a aria-label="Reserva - Haz una reservación en nuestra cantina">Reserva</a></li>
             </ul>
         </nav>
-        <img class="bandera" src="img/italia.jpg" alt="Bandera de Italia" width="140" height="80" role="img" aria-label="Bandera de Italia">
+        <img class="bandera" src="img/italia.jpg" alt="" aria-hidden="true" width="140" height="80">
     </header>
     <main>
         <section id="bienvenida" aria-labelledby="tituloBienvenida">
@@ -39,13 +38,13 @@
                 <p>Buenos Aires - Argentina</p>
                 <p>Nos encontrarás en calle Camarones, número 1901.</p>
             </article>
-            <article id="fotos" aria-label="Galería de platos italianos">
-                <img src="img/plato1.jpeg" longdesc="Pasta italiana con salsa" width="220" height="150">
-                <img src="img/plato2.jpeg" longdesc="Pizza italiana tradicional" width="220" height="150">
-                <img src="img/plato3.jpeg" longdesc="Risotto italiano servido" width="220" height="150">
-                <img src="img/plato4.jpg" longdesc="Lasaña de carne tradicional" width="220" height="150">
-                <img src="img/plato5.jpeg" longdesc="Carpaccio de carne con aderezo" width="220" height="150">
-                <img src="img/plato6.jpeg" longdesc="Tiramisú casero de postre" width="220" height="150">
+            <article id="fotos" alt="Galería de platos italianos">
+                <img src="img/plato1.jpeg" alt="Pasta italiana con salsa" width="220" height="150">
+                <img src="img/plato2.jpeg" alt="Pizza italiana tradicional" width="220" height="150">
+                <img src="img/plato3.jpeg" alt="Risotto italiano servido" width="220" height="150">
+                <img src="img/plato4.jpg" alt="Lasaña de carne tradicional" width="220" height="150">
+                <img src="img/plato5.jpeg" alt="Carpaccio de carne con aderezo" width="220" height="150">
+                <img src="img/plato6.jpeg" alt="Tiramisú casero de postre" width="220" height="150">
             </article>
         </section>
 
@@ -68,7 +67,7 @@
                     <h3 id="servicioReserva">Reserva</h3>
                     <img src="img/reserva.jpg" alt="Ícono de reserva para nuestra cantina" width="150" height="70">
                     <p class="textoArticle">Disfruta de una gran experiencia en nuestra cantina</p>
-                    <button class="btnServicio" aria-label="Reservar ahora en la sección Reserva">Reservar ahora</button>
+                    <button class="btnServicio" aria-label="Reservar mesa en Cantina Chichilo">Reservar ahora</button>
                 </article>
             </div>
         </section>

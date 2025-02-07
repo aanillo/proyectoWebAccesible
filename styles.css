@@ -3,12 +3,12 @@
 }
 
 body {
-    font-family: Arial, sans-serif; /* Aseguramos que la tipografía sea legible en todos los dispositivos */
-    line-height: 1.6; /* Mejora la legibilidad del texto */
+    font-family: Arial, sans-serif; 
+    line-height: 1.6; 
     background-color: #f4f4f4;
 }
 
-/* Mejora de la visibilidad para el encabezado */
+
 header {
     position: fixed;
     top: 0;
@@ -19,11 +19,11 @@ header {
     width: 100%;
     height: 90px;
     padding-top: 5px;
-    z-index: 10; /* Para asegurarse de que siempre está visible */
+    z-index: 10;
 }
 
 .titulo {
-    font-family: 'Algerian', cursive; /* Añadimos una fuente más legible */
+    font-family: 'Algerian', cursive; 
     color: white;
     font-size: 1.5em;
     font-weight: bold;
@@ -33,11 +33,11 @@ header {
     margin-top: 5px;
 }
 
-/* Mejora la visibilidad del formulario de búsqueda */
+
 .busqueda-perfil {
     display: flex;
-    align-items: center; /* Asegura que los elementos estén centrados verticalmente */
-    gap: 40px; /* Reduce el espacio entre la lupa y la barra de búsqueda */
+    align-items: center; 
+    gap: 50px; 
 }
 
 #lupa {
@@ -45,11 +45,16 @@ header {
     border: solid 1px black;
     height: 32px;
     padding: 5px;
-    margin-right: -10px;
-    cursor: pointer; /* Indica que es interactivo */
+    margin-right: -50px;
+    cursor: pointer; 
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+#label {
+    color: white;
+    font-size: large;
 }
 
 #cuadro {
@@ -59,12 +64,12 @@ header {
     padding: 8px;
     background-color: #fff;
     color: #000;
-    line-height: 1.5; /* Ajusta la altura para mejorar la alineación */
+    line-height: 1.5;
 }
 
 #perfil {
     border: solid 1px black;
-    height: 32px; /* Ajusta la altura del icono de perfil */
+    height: 32px;
 }
 
 .txtPerfil {
@@ -75,18 +80,18 @@ header {
 
 #perfil:hover {
     transform: scale(1.1);
-    background-color: rgba(255, 255, 255, 0.2); /* Agrega un cambio de color para mejor interacción */
+    background-color: rgba(255, 255, 255, 0.2); 
 }
 
 #perfil:focus {
-    outline: 3px solid #ffbf47; /* Mejora la visibilidad cuando se selecciona */
+    outline: 3px solid #ffbf47; 
 }
 
 #bandera {
     margin-top: 20px;
 }
 
-/* Mejora de la accesibilidad de los links del nav */
+
 header nav {
     display: flex;
     gap: 15px;
@@ -111,14 +116,14 @@ header nav ul li a {
     color: white;
     font-size: x-large;
     text-decoration: none;
-    transition: all 0.3s ease; /* Mejora la transición */
+    transition: all 0.3s ease;
     font-size: large;
 }
 
 header nav ul li a:hover,
 header nav ul li a:focus {
-    transform: scale(1.1);
-    color: #ffbf47; /* Color más visible cuando está en foco o hover */
+    transform: scale(1.2);
+    color: #ffbf47; 
 }
 
 header nav ul li a:active {
@@ -144,13 +149,13 @@ h1 {
     padding: 40px 0;
     border-radius: 15px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    color: #333; /* Texto más oscuro para mejor contraste */
+    color: #333; 
 }
 
 #texto {
     width: 40%;
     font-size: 1.2em;
-    line-height: 1.5; /* Mejora la legibilidad */
+    line-height: 1.5; 
 }
 
 #fotos {
@@ -164,7 +169,7 @@ h1 {
     max-width: 100%;
 }
 
-/* Servicios mejorados para accesibilidad */
+
 .servSection {
     display: flex;
     justify-content: center;
@@ -201,7 +206,7 @@ h1 {
 }
 
 .servicio:hover {
-    transform: scale(1.05); /* Aumento suave para facilitar la interacción */
+    transform: scale(1.05); 
 }
 
 .btnServicio {
@@ -243,7 +248,7 @@ footer {
     color: white;
 }
 
-/* Mejoras en accesibilidad general */
+
 a:focus {
-    outline: 3px solid #ffbf47; /* Agrega un contorno cuando se hace foco en los links */
+    outline: 3px solid #ffbf47; 
 }

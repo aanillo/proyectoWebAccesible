@@ -149,3 +149,11 @@ He realizado distintas pruebas y para ello he utilizado distintas herramientas.
 
 #### Primera prueba, accesibilidad en TAW
 Para verificar el cumplimiento del nivel AA:
+
+
+
+## Fase 7 - Verificación multiplataforma
+
+#### Probar la visualización del sitio en navegadores
+
+
