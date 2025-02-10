@@ -2,158 +2,193 @@
 
 ---
 
-
 ## Fase 1 - Reconocimiento de la necesidad de accesibilidad web
 
-#### 1. Investigación sobre accesibilidad web
+### 1. Investigación sobre accesibilidad web
 
-__- ¿Por qué es importante diseñar webs accesibles?:__ porque ofrece beneficios prácticos y legales a las empresas y, sobre todo, ofrece beneficios en la navegación a todo tipo de personas.
+**¿Por qué es importante diseñar webs accesibles?**  
+Porque ofrece beneficios prácticos y legales a las empresas y, sobre todo, mejora la navegación para todo tipo de personas.
 
+**¿Qué beneficios aporta a los usuarios y a los desarrolladores?**  
+- **Inclusión y acceso equitativo**: fomenta un sentido de pertenencia en el mundo digital para personas con discapacidad.
+- **Obligaciones legales y éticas**: la falta de cumplimiento puede acarrear sanciones.
+- **Expansión del alcance de la audiencia**, eliminando obstáculos.
+- **Facilita el acceso universal**.
+- **Optimización SEO**: elementos como navegación clara, encabezados descriptivos y contenido bien estructurado benefician la experiencia del usuario y mejoran el posicionamiento.
 
-__-¿Qué beneficios aporta a los usuarios y a los dessarrolladores?:__  
-- Inclusión y acceso equitativo: fomentar un sentido de pertenencia en el mundo digital a las personas con discapacidad.
-- Obligaciones legales y éticas: la falta de cumplimiento puede acarrear sanciones. 
-- Expansión del alcance de la audiencia, eliminando obstáculos.
-- Facilita el acceso universal.
-- Optimización de los motores de búsqueda (SEO): Elementos como una navegación clara, encabezados descriptivos y contenido bien estructurado benefician a todos los usuarios, contribuyendo a tiempos de permanencia más largos en el sitio.
+**Relación con normativas vigentes**  
+Las **WCAG 2.1** establecen criterios para que los sitios web sean perceptibles, operables, comprensibles y robustos, categorizándolos en niveles de conformidad A, AA y AAA.  
+En España, el **Real Decreto 1112/2018** transpone la **Directiva Europea 2016/2102**, obligando a organismos públicos y otros actores a cumplir con los estándares de accesibilidad.
 
-
-__Relación con normativas vigentes:__ Las WCAG 2.1 establecen criterios para que los sitios web sean perceptibles, operables, comprensibles y robustos, categorizándolos en niveles de conformidad A, AA y AAA. En España, el Real Decreto 1112/2018 transpone la Directiva Europea 2016/2102, obligando a organismos públicos y otros actores a cumplir con los estándares de accesibilidad para garantizar la igualdad de acceso.
-
-
-#### 2. Reflexionar sobre cómo la accesibilidad mejora la experiencia del usuario (UX) y contribuye a la inclusión digital.
-Además de las obligaciones legales y éticas implementadas en la actualidad, convertir las páginas webs en accesibles a todos los públicos suponen una inversión en calidad, inclusión y sostenibilidad digital. Además, que el compromiso con las personas es fundamental en cualquier aspecto de la vida, y en el desarrollo web no iba a ser menos. 
+### 2. Reflexión sobre la accesibilidad y la experiencia del usuario (UX)
+Convertir las páginas webs en accesibles supone una inversión en **calidad, inclusión y sostenibilidad digital**. El compromiso con las personas es fundamental en cualquier ámbito, y el desarrollo web no es una excepción.
 
 ---
-
 
 ## Fase 2 - Análisis inicial de accesibilidad en documentos web
-#### Página web escogida para el análisis: 
-http://www.cantinachichilo.com.ar/.
 
-#### Herramienta seleccionada para el análisis:
-TAW.
+### Página web analizada
+[Cantina Chichilo](http://www.cantinachichilo.com.ar/)
 
-#### Pruebas:
-__1- Resultado generales:__
-<img src="taw/taw1.jpg" alt="imagen resultados">
+### Herramienta utilizada
+**TAW**
 
-__2- Perceptibilidad:__
-<img src="taw/taw2.jpg" alt="imagen resultados">
+### Pruebas y resultados
 
-__3- Operabilidad:__
-<img src="taw/taw3.jpg" alt="imagen resultados">
+1. **Resultados generales:**  
+   ![Resultados](taw/taw1.jpg)
 
-__4- Comprensibilidad:__
-<img src="taw/taw4.jpg" alt="imagen resultados">
+2. **Perceptibilidad:**  
+   ![Perceptibilidad](taw/taw2.jpg)
 
-__5- Robustez:__
-<img src="taw/taw5.jpg" alt="imagen resultados">
+3. **Operabilidad:**  
+   ![Operabilidad](taw/taw3.jpg)
 
-#### Problemas encontrados:
-Ya que el sitio web tiene una infinidad de problemas, voy a comentar los más importantes:
+4. **Comprensibilidad:**  
+   ![Comprensibilidad](taw/taw4.jpg)
 
-__- Perceptibilidad:__ 
-No hay nada que facilite la navegación accesible.
+5. **Robustez:**  
+   ![Robustez](taw/taw5.jpg)
 
-No se encuentran elementos de contenido no textual, como CAPTCHAS o elementos sensoriales.
-No hay elementos multimedia, como por ejemplo videos, por tanto no se encuentra subtítulos o elementos derivados, para facilitar la navegación.
+### Problemas detectados
 
-La presentación de elementos no está bien estructurada.
+#### **Contenido no textual**
+- Controles de formulario sin etiquetar.
+- Imágenes sin atributo **alt**.
+- Enlaces consecutivos de texto e imagen al mismo recurso.
+Algunas imágenes podrían requerir una descripción más detallada para ser comprendidas correctamente.
 
-También falla el contraste entre los textos de gran tamaño y los de pequeño.
+#### **Información y relaciones**
+- Falta del elemento **h1**.
+- Uso de tablas en la navegación.
+- Etiquetas mal utilizadas.
+- Se han detectado enlaces con imágenes y texto que apuntan al mismo destino sin estar agrupados.
 
-
-__- Operabilidad:__
-La navegación entre periféricos distintos al ratón, es inexistente.
-
-Problemas de navegabilidad que presenta: la web no tiene un título claro ni posee elementos para evitar bloques.
+#### **Uso del color**
+- Información transmitida solo con color.
+- Bajo contraste entre texto y fondo.
+- Uso de fuentes con tamaño absoluto en lugar de relativo.
 
 ---
-
 
 ## Fase 3 - Análisis de principios, pautas y niveles de conformidad
 
+### 1. Principios fundamentales
+##### Requisitos:
+**Perceptibilidad:** asegurarse de que la información y los componentes de la interfaz de usuario sean perceptibles para todos los usuarios.
+**Operabilidad:** garantizar que la interfaz sea operable para todos los usuarios.
+**Comprensibilidad:** hacer que el contenido y la operación de la interfaz sean comprensibles para todos los uaurios.
+**Robustez:** garantizar que el contenido sea compatible con diferentes tecnologías de asistencia.
 
-#### 1. Estudiar los principios funamentales:
-__Perceptibilidad:__ estudia si los usuarios perciben correctamente la información y los componentes de la interfaz.
-__Operabilidad:__ determina si los componentes de la interfaz y la navegación son funcionales para los usuarios.
-__Comprensibilidad:__ tal y como el nombre indica, analiza si los componentes son de fácil comprensión para los usuarios.
-__Robustez:__ indica si el contenido puede ser interpretado de manera fiable por una variedad de agentes de usuario, incluidas tecnologías de asistencia.
+### 2. Pautas asociadas
+- **Perceptibilidad**: Texto alternativo, adaptabilidad, distinguibilidad.
+- **Operabilidad**: Acceso por teclado, tiempo suficiente, evitar convulsiones, navegación.
+- **Comprensibilidad**: Legibilidad, interfaces predecibles, asistencia en la entrada.
+- **Robustez**: Compatibilidad, claridad.
 
+### 3. Nivel de conformidad objetivo
+El nivel **AA** es el recomendado para cumplir normativas. 
 
-#### 2. Pautas asociadas a cada principio:
-__Perceptibilidad:__ 
-- Texto alternativo: proporcionar alternativas textuales para el contenido no textual. 
-- Adaptabilidad.
-- Distinguibilidad.
-__Operabilidad:__ 
-- Acceso por teclado.
-- Suficiente tiempo: para que los usuarios puedan leer y usar el contenido.
-- Evitar convulsiones.
-- Navegación.
-__Comprensibilidad:__ 
-- Legibilidad.
-- Interfaces predecibles.
-- Asistencia en la entrada: ayuda a evitar y corregir errores.
-__Robustez:__ 
-- Compatibilidad.
-- Claridad: a la hora de proporcionar nombres, fuciones y valores a los elementos interactivos.
+### 4. Requisitos del nivel AA:
+**Contraste de colores:** el contraste entre el texto y el fondo debe ser de al menos 4.5:1 para el texto normal y 3:1 para el texto grande.
+**Ajuste de texto:** los usuarios deben poder ajustar el tamaño del texto hasta un 200% sin perder contenido o funcionalidad.
+**Navegación accesible:** deben proporcionarse múltiples maneras de encontrar páginas en un sitio web.
+**Elementos de una interfaz accesibles:** las etiquetas y las instrucciones deben ser claras y estar disponibles para los componentes de la interfaz de usuario.
+**Compatibilidad con teclado:** todo el contenido debe ser navegable y accesible mediante un teclado.
+**Error y sugerencia de corrección:** deben proporcionarse sugerencias de corrección cuando el usuario comete un error de entrada.
+**Autenticación más accesible:** proporcionar más de un método de autenticación o acceso, y asegurarse de que los métodos de autenticación sean accesibles.
 
-
-#### 3. Determinar el nivel de conformidad objetivo (nivel AA) y analizar sus requisitos:
-Existen 3 niveles de conformidad: A, AA y AAA.
-
-__Nivel AA:__ es el nivel que indica que el contenido proporciona mejoras adicionales a la accesibilidad, más allá del nivel A, que es el básico. Es el nivel recomendado para cumplir con las normativas.
-Para cumplir con el nivel, es necesario:
-- Garantizar un contraste mínimo de texto de 4.5:1, que es el que indica que un texto es distinguible para la mayoría de las personas.
-- Proveer mecanismos para evitar contenido repetitivo.
-- Asegurar que las páginas web sean completamente funcionales a través de un teclado.
-
-
-#### 4. Ejemplos prácticos:
-__Perceptibilidad:__ utilizar descripciones de texto alternativo para las imágenes (alt). 
-__Operabilidad:__ asegurarse de que los botones y enlaces puedan activarse con teclas de tabulación y con la tecla Enter.
-__Comprensibilidad:__ a la hora de completar un usuario, introducir mensajes de corrección. Por ejemplo, "Por favor, introduzca una contraseña con más de 6 caracteres".
-__Robustez:__ utilizar etiquetas para botones interactivos, como puede ser aria-label="Enviar formulario".
+### 5. Ejemplos prácticos
+- **Perceptibilidad**: Descripciones en **alt**.
+- **Operabilidad**: Botones navegables con **tab** y **Enter**.
+- **Comprensibilidad**: Mensajes de corrección en formularios.
+- **Robustez**: Uso de etiquetas **aria-label**.
 
 ---
 
+## Fase 5 - Implementación de mejoras
 
-## Fase 5 - Implementación para alcanzar el nivel deseado
+Dado que la web original tiene demasiados problemas, se ha decidido reconstruir el **index** desde cero.
 
-Para el desarrollo de esta fase:
-- En primer lugar, las pruebas que muestran cómo estaba la web antes, están ubicadas en la Fase 2 de este proyecto.
-- En lugar de aplicar mejoras a la página, voy a construir el index desde el principio, es decir, voy a ofrecer una versión nueva, ya que mejorar tantísimos elementos que tiene el interminable index de la web seleccionada, sería una tarea demasiado extensa.
+### Nueva página HOME
+![Index 1](img/index1.jpg)  
+![Index 2](img/index2.jpg)
+![Index 3](img/index3.jpg)
 
-Página HOME nueva para la cantina:
+### Mejoras implementadas
+- Contraste de colores mejorado.
+- Mejor visibilidad del texto.
+- Estructura semántica con **header, main, section, article, footer**, además de una ordenación adecuada de las etiquetas **h1, h2, h3**.
+- Sombras en fondos y organización optimizada.
+- Navegación accesible con teclado.
+- Efectos visuales en enlaces.
+- Imágenes con textos descriptivos (**alt**).
+- **Accesibilidad añadida**.
 
-<img src="taw/index1.jpg" alt="index 1">
-<img src="taw/index2.jpg" alt="index 2">
-
-
-Mejoras implementadas:
-- He utilizado un contraste de colores que pasa todos los filtros de las webs encargadas de analizar los contrastes.
-- He dotado de mejor visibilidad a elementos como los tamaños de los textos.
-- He organizado el contenido, empleando las etiquetas header, main (con section y article) y footer.
-- He aplicado sombras en los fondos.
-- He ordenado mejor los elementos.
-- Garantizo la navegación mediante teclado.
-- Los enlaces a otras páginas tienen efectos de mayor visibilidad al pasar el ratón.
-- Las imágenes tienen textos descriptivos para mostrar en caso de problemas de carga o incompatibilidad con el navegador.
-- Accesibilidad añadida.
+---
 
 ## Fase 6 - Verificación mediante tests externos
 
-He realizado distintas pruebas y para ello he utilizado distintas herramientas.
+### Prueba en TAW
 
-#### Primera prueba, accesibilidad en TAW
-Para verificar el cumplimiento del nivel AA:
+Resultados de accesibilidad **nivel AA** sin errores:
 
+![Informe](taw/informe.jpg)
 
+Detalles:
+
+![Informe 2](taw/informe2.jpg)  
+![Informe 3](taw/informe3.jpg)  
+![Informe 4](taw/informe4.jpg)
+
+### Prueba en Sortsite
+
+Confirmación de accesibilidad **nivel AA**:
+
+![Sortsite](taw/sortsite.jpg)
+
+---
 
 ## Fase 7 - Verificación multiplataforma
 
-#### Probar la visualización del sitio en navegadores
+### Pruebas en navegadores
 
+- **Microsoft Bing**:  
+  ![Bing](taw/comp1.jpg)
 
+- **Google Chrome**:  
+  ![Chrome](taw/comp2.jpg)
+
+- **Firefox**:  
+  ![Firefox](taw/comp3.jpg)
+
+### Verificación en dispositivos móviles
+
+Pruebas realizadas para garantizar adaptabilidad y accesibilidad en diferentes dispositivos.
+
+- **Móvil**:
+    ![Móvil](taw/movil.jpg)
+
+---
+
+## Fase 8 - Análisis y estrategias para mejorar la visibilidad en buscadores
+
+### 1. SEO On-page:
+- El empleo de etiquetas semánticas, lo apliqué previamente en fases anteriores.
+- El título descriptivo también estaba ya incuido.
+- Sobre la configuración de las descriciones "meta", procedo a añadir "meta description", indicando un breve resumen de la página.
+- También añado la etiqueta "meta keywords" con las palabras claves de la web.
+
+    ![Descripción](img/meta.jpg)
+
+### 2. SEO técnico:
+Para este punto, desarrollo un **sitemap** dinámico utilizando Express, que incluya las rutas principales de la aplicación.
+Para ello, el lugar donde se realiza es en [Sitemaps](http://www.xml-sitemaps.com).
+
+Sitemaps:
+    ![Sitemap](img/sitemap.jpg)
+
+XML proporcionado por Sitemaps:
+    ![XML](img/xml.jpg)
+
+### 3. SEO Off-page:
